@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
     <title>DexStation</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./img/Hektakun-Pokemon-104-Cubone.72.png" type="image/x-icon">
     
 </head>
@@ -28,19 +35,52 @@
             </li>
         </ul>
         <img src="./img/icons8-pokebola-64.png" alt="icone pokedex" class="container_imagem">
-    </div>          
-            <input type="search
-            " class="container__pesquisa" placeholder="Pequise aqui">
-            <label for="menu">
-                <span class="cabecalho__pesquisa">
-                </span>
-            </label>
-            </div>
-            <div class="container">
-    
-            </div>
-
+        </div>
+        <div class="container">
+            <a href="#"><img src="./img/favoritop.png" alt="icone favoritos" class="container__imagem"></a>
+            <a href="#"><img src="./img/login.png" alt="icone login" class="container__imagem"></a>
+        </div>
     </header>
-    
+    <section class="banner">
+        <h2 class="banner__titulo">Para facilitar sua busca</h2>
+        <p class="banner__texto">Informe o que procura abaixo</p>
+        <input type="search" class="banner__pesquisa" placeholder="O que procura?">
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Meus favoritos</h2>
+        <!-- Slider main container -->
+            <div class="swiper">
+                <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+        <!-- Slides -->
+            <div class="swiper-slide"><img src="./img/gengar.png" alt="gengar"></div>
+            <div class="swiper-slide"><img src="./img/cubone.png" alt="cubone"></div>
+            <div class="swiper-slide"><img src="./img/butterfree.png" alt="butterfree"></div>
+            <div class="swiper-slide"><img src="./img/charizard.png" alt="charizard"></div>
+            <div class="swiper-slide"><img src="./img/beedrill.png" alt="beedrill"></div>
+            <div class="swiper-slide"><img src="./img/gyarados.png" alt="gyarados"></div>
+             ...
+            </div>
+  
+        <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+  },
+});
+    </script>
 </body>
 </html>

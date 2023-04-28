@@ -1,16 +1,21 @@
 @import url("./styles/header.css");
+@import url("./styles/banner.css");
+@import url("./styles/carrossel.css");
 
 :root {
     --cor-de-fundo: 	#87CEFA;
     --branco: #FFFFFF;
-    --amarelo: yellow;
+    --amarelo: rgb(255, 145, 0);
     --cor-de-fundo-body: #AFEEEE;
     --azul-escuro: blue;
+    --fonte-principal: "Poppins";
 }
 
 body {
     font-size: 14px;
     background-color: var(--cor-de-fundo-body);
+    font-family: var(--fonte-principal);
     font-size: 16px;
+    font-weight: 400;
 
 }
