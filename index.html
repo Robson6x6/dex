@@ -71,6 +71,128 @@
 
     </section>
 
+    <section>
+
+        <div class="card">
+            <!--primeira linha-->
+            <div class="card__descrição">
+                <!--primeira coluna-->
+                <div class="descrição">
+                    <h3 class="descrição__titulo"> Se você está aqui você se interessa pelo...</h3>
+                    <h2 class="descrição__titulo-pok"> Cubone o pokémon orfão</h2>
+                    <p class="descrição__texto">Cubone é um pokémon muito legal e forte, mas triste sua história...</p>
+                </div>
+                <!--segunda coluna-->
+                <img src="img/cubone.png" alt="cubone">
+            </div>
+
+            <!--segunda linha-->
+            <div class="card__botões">
+                <!--primeira coluna-->
+                <ul class="botões">
+                    <li class="botões__item">
+                        <img src="img/favoritop.png" alt="favoritar pokemon">
+                    </li>
+                </ul>
+                <!--Segunda coluna-->
+                <a href="#" class="botões__ancoras">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Mais acessados</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+    <!-- Slides -->
+        <div class="swiper-slide"><img src="./img/gengar.png" alt="gengar"></div>
+        <div class="swiper-slide"><img src="./img/cubone.png" alt="cubone"></div>
+        <div class="swiper-slide"><img src="./img/butterfree.png" alt="butterfree"></div>
+        <div class="swiper-slide"><img src="./img/charizard.png" alt="charizard"></div>
+        <div class="swiper-slide"><img src="./img/beedrill.png" alt="beedrill"></div>
+        <div class="swiper-slide"><img src="./img/gyarados.png" alt="gyarados"></div>
+         ...
+        </div>
+
+    <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    
+    <div class="card">
+        <!--primeira linha-->
+        <div class="card__descrição">
+            <!--primeira coluna-->
+            <div class="descrição">
+                <img src="img/Estrelinhas.svg" alt="sobre o autor">
+                <h3 class="descrição__titulo">Criador do site</h3>
+                <h2 class="descrição__titulo-pok">Robson Freitas</h2>
+                <p class="descrição__texto">Estudante de Front-End casado com Tais, pai da Júlia e apaixonado pela franquia de jogos Pokémon</p>
+            </div>
+            <!--segunda coluna-->
+            <img src="img/criador.jpg" alt="foto criador">
+        </div>
+        <!--segunda linha-->
+        <div class="card__botões">
+            <ul class="botões">
+                 <li class="botões__item"><img src="img/favoritop.png" alt="favoritar"></li>
+            </ul>
+            <!--segunda coluna-->
+            <a href="#" class="botões__ancoras">Saiba mais</a>
+        </div>
+    </div>
+
+    </section>
+
+    <section class="tópicos">
+        <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <ul class="tópicos__lista">
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Cubone</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">1ª Ger</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Itens</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">O inicio</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Shiny</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">mew</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">lendarios</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">mewtwo</a>
+            </li>
+        </ul>
+
+    </section>
+
+    <section class="contato">
+        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+        <p class="contato__texto">
+            Atualizações de novas gerações e pokémon
+        </p>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+    </section>
+
+    <hr/>
+    <footer class="rodapé">
+        <h2 class="rodapé__titulo">Robson Freitas</h2>
+    </footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
