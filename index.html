@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
@@ -35,10 +36,29 @@
             </li>
         </ul>
         <img src="./img/icons8-pokebola-64.png" alt="icone pokedex" class="container_imagem">
+        <h1 class="container__titulo"><b class="container__titulo--negrito">SKULL</b>DEX</h1>
         </div>
+
+        <ul class="opções">
+            <input type="checkbox" id="opções-menu" class="opções__botão">
+            <label for="opções-menu">
+                <li class="opções__item">Categorias</li>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Pokémon</a>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Sobre nós</a>
+                    </li>
+                </li>
+            </ul>
+            <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+            <li class="opções__item"><a href="#" class="opções__link">Meu time</a></li>
+        </ul>
+
         <div class="container">
-            <a href="#"><img src="./img/favoritop.png" alt="icone favoritos" class="container__imagem"></a>
-            <a href="#"><img src="./img/login.png" alt="icone login" class="container__imagem"></a>
+            <a href="#"><img src="./img/favoritop.png" alt="icone favoritos" class="container__imagem container__imagem-transparente"></a>
+            <a href="#"><img src="./img/login.png" alt="icone login" class="container__imagem"></a>          
         </div>
     </header>
     <section class="banner">
@@ -180,16 +200,23 @@
     </section>
 
     <section class="contato">
-        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-        <p class="contato__texto">
+        <div class="contato__descrição">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto">
             Atualizações de novas gerações e pokémon
-        </p>
+            </p>
+        </div>
         <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
     </section>
 
     <hr/>
     <footer class="rodapé">
         <h2 class="rodapé__titulo">Robson Freitas</h2>
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo"></li>
+        </ul>
+
+        <ul></ul>
     </footer>
 
 
